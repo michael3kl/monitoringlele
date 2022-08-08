@@ -217,45 +217,8 @@
             </div>
         </div>
         <div class="col-12 shadow-sm rounded mt-2 bg-white p-3">
-            <div id="chartLele"></div>
+            <div id="chartLele">
+                <a href="<?= base_url(); ?>farmer/kolam">Tambah Kolam</a>
+            </div>
         </div>
     </div>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script>
-        Highcharts.chart('chartLele', {
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: '<b>Data Statistik Jumlah Ikan Perkolam</b>'
-            },
-            xAxis: {
-                categories: ['<a href="<?= base_url(); ?>farmer/kolam">Kolam A</a>', '<a href="<?= base_url(); ?>farmer/kolam">Kolam B</a>', '<a href="<?= base_url(); ?>farmer/kolam">Kolam C</a>', '<a href="<?= base_url(); ?>farmer/kolam">Kolam D</a>', '<a href="<?= base_url(); ?>farmer/kolam">Kolam E</a>', '<a href="<?= base_url(); ?>farmer/kolam">Kolam F</a>'],
-                crosshair: true
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: '<b>Jumlah Ikan</b>'
-                }
-            },
-            tooltip: {
-                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.f}</b></td></tr>',
-                footerFormat: '</table>',
-                shared: true,
-                useHTML: true
-            },
-            plotOptions: {
-                column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                }
-            },
-            series: [{
-                name: '<b>kolam</b>',
-                data: [<?php echo json_encode($item); ?>, 5, 8, 9, 10, 10],
-            }],
-        });
-    </script>

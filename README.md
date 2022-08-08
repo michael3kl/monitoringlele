@@ -1,14 +1,14 @@
 # lele
 Aplikasi Monitoring Lele
 
-Aplikasi menggunakan php menggunakan CodeIgniter diharapkan dapat mempermudah guru dalam membuat pengisian jurnal pembelajaran dan mempermudah mengingat jadwal mengajar, materi terakhir tiap kelas, peserta didik yang tidak masuk pada pertemuan sebelumnya
+Aplikasi menggunakan php menggunakan CodeIgniter 
 
 Login menggunakan user
-email : user@guruku.com
+email : user@monitoring.com
 password : admin
 
 Login menggunakan admin
-email : admin@guruku.com
+email : admin@monitoring.com
 password : admin
 
 ## Terimakasih ##
