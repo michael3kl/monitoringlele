@@ -54,7 +54,7 @@ class farmer extends CI_Controller
             $this->db->join('tb_bibit', 'tb_bibit.kode_bibit = tb_jadwal.kode_bibit', 'left');
             $this->db->join('tb_kolam', 'tb_kolam.kode_kolam = tb_jadwal.kode_kolam', 'left');
             $this->db->join('tb_pakan', 'tb_pakan.email = tb_jadwal.email', 'cross');
-            
+
             $data['jadwal'] = $this->db->get_where('tb_jadwal', ['tb_jadwal.email' => $email, 'hari' => $hari])->result();
 
             $jml = $this->db->get_where('tb_jadwal', ['hari' => $hari]);
@@ -171,7 +171,7 @@ class farmer extends CI_Controller
             }
         }
     }
-    
+
     /**
      * Fungsi ubah jadwal farmer
      */
@@ -642,13 +642,13 @@ class farmer extends CI_Controller
 
             $databibit = $this->db->get_where('tb_bibit', ['kode_bibit' => $kode_bibit])->row_array();
             $bibit = $databibit['bibit'];
-            
+
             $datakolam = $this->db->get_where('tb_kolam', ['kode_kolam' => $kode_kolam])->row_array();
             $nama_kolam = $datakolam['nama_kolam'];
             $status_mati = $datakolam['status_mati'];
             $keterangan = $datakolam['keterangan'];
             $jumlah_pakan = $datakolam['jumlah_pakan'];
-            
+
             // $data['siswa'] = $this->db->get_where('tb_siswa', ['kode_kelas' => $kode_kelas])->result_array();
 
             $data = $this->db->get('tb_jadwal')->result();
@@ -662,7 +662,7 @@ class farmer extends CI_Controller
                 'bibit' => $bibit,
                 'tanggal' => $tanggal,
                 'nama_kolam' => $nama_kolam,
-                'status_mati'=>$status_mati,
+                'status_mati' => $status_mati,
                 'keterangan' => $keterangan,
                 'antibiotik' => $antibiotik,
                 'tg' => $tg,
@@ -705,7 +705,7 @@ class farmer extends CI_Controller
             $keterangan = $this->input->post('keterangan');
             $jumlah_pakan = $this->input->post('jumlah_pakan');
             $tinggi_air = $this->input->post('tinggi_air');
-            $antibiotik = $this->input->post('antibiotik'); 
+            $antibiotik = $this->input->post('antibiotik');
 
             $this->db->where('kode_customer', $kode_customer);
             $this->db->where('hari', $hari);
