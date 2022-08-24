@@ -49,8 +49,30 @@
                                     <td style="padding-left:20px; padding-right:10px">:</td>
                                     <td><?= $data['tanggal']; ?></td>
                                 </tr>
+                                <tr> </tr>
+                                <tr> </tr>
+                                <tr>
+                                    <th>Ikan Mati</th>
+                                    <td style="padding-left:20px; padding-right:10px">:</td>
+                                    <td><input required type="text" name="status_mati" id="status_mati"> ekor</td>
+                                </tr>
+                                <tr>
+                                    <th>Jumlah pakan yang diberikan</th>
+                                    <td style="padding-left:20px; padding-right:10px">:</td>
+                                    <td><input required type="text" name="jumlah_pakan" id="jumlah_pakan"> kg</td>
+                                </tr>
+                                <tr>
+                                    <th>Tinggi Air Kolam</th>
+                                    <td style="padding-left:20px; padding-right:10px">:</td>
+                                    <td><input required type="text" name="tinggi_air" id="tinggi_air"> cm</td>
+                                </tr>
+                                <tr>
+                                    <th>Diberi Antibiotik (Ya/Tidak)</th>
+                                    <td style="padding-left:20px; padding-right:10px">:</td>
+                                    <td><input required type="text" name="antibiotik" id="antibiotik"></td>
+                                </tr>
                             </table>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="sakit">Ikan Mati &nbsp&nbsp&nbsp</label>
@@ -75,12 +97,12 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="sakit">Diberi Antibiotik (Ya/Tidak) &nbsp&nbsp&nbsp</label>
-                                        <!-- <input type="radio" name="antibiotik" id="antibiotik1" value="0" required>Ya &ensp;
-                                        <input type="radio" name="antibiotik" id="antibiotik2" value="1" required>Tidak -->
+                                         <input type="radio" name="antibiotik" id="antibiotik1" value="0" required>Ya &ensp;
+                                        <input type="radio" name="antibiotik" id="antibiotik2" value="1" required>Tidak
                                         <input required type="text" name="antibiotik" id="antibiotik">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <br><br>
                             <div class="row">
                                 <div class="col-sm-12">
